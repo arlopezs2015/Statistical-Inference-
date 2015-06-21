@@ -102,7 +102,7 @@ Variance and Confidence Intervals
 Conf_Int_sim <- round (avng_sim + c(-1,1)*1.96*sd(exp_dist_mean)/sqrt(n),3)
 Conf_Int_theory <- mean_theory + c(-1,1)*1.96*sqrt(var_theory)/sqrt(n);
 ```
-
+![plot2](https://cloud.githubusercontent.com/assets/10600024/8270541/17230450-17d2-11e5-8787-9f7e4bdea6f1.png)
 
 
 ## 95% Confidence Interval simulated and real
@@ -114,10 +114,10 @@ Conf_Int_theory
 The 95% confidence intervals are very similar, for the simulated data 4.762,5.235 and the real ones 4.755,5.245
 
 
-#Drawin the quantiles
+#Drawing the quantiles
 ```{r, echo=FALSE}
 qqnorm(exp_dist_mean); qqline(exp_dist_mean)
 ```
-
+![plot3](https://cloud.githubusercontent.com/assets/10600024/8270542/20dec7a4-17d2-11e5-982d-e5903ef986c8.png)
 
 
